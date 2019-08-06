@@ -125,3 +125,6 @@ class Apple: Fruits {
 }
 var obj4 = Apple("Yo")
 print(obj4)
+
+
+

@@ -81,7 +81,7 @@ print(newArr)
 
 //Dictionaries
 var airports : [String:Float] = ["XYZ":4,"DUB":9.0]
-print("The airport dictionary contains \(airports.count)")
+print("The airport dictionary contains \(airports.count)")
 airports["LON"] = 5
 print("The airport dictionary contains \(airports.count)")
 
