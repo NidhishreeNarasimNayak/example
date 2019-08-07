@@ -106,3 +106,69 @@ reference1 = Person(name: "Nidhishree")
 reference2 = reference1
 reference1 = nil
 reference2 = nil
+
+//strong reference
+
+class Person1 {
+    let name: String
+    init(name: String) {
+        self.name = name
+        print("\(name) is being initialized")
+    }
+    var gadget: Gadget?
+    deinit {
+        print("\(name) is being deinitialized")
+    }
+}
+
+class Gadget {
+    let model: String
+    init(model: String) {
+        self.model = model
+        print("\(model) is being initialized")
+    }
+    var owner: Person1?
+    deinit {
+        print("\(model) is being deinitialized")
+    }
+}
+let obj6 = Person1(name: "Orange")
+
+//how does arc work
+class Person2 {
+    let name: String
+    init(name: String){
+        self.name = name
+        print("\(name) is being initialized")
+        
+    }
+   weak var gadget: Gadget1?
+    deinit {
+        print("\(name) is being deinitialized")
+    }
+}
+class Gadget1{
+    let model: String
+    init(model: String) {
+        self.model = model
+        print("\(model) is being initialized")
+        
+    }
+  weak var owner: Person2?
+    deinit {
+        print("\(model) is being deinitialized")
+    }
+}
+
+var obj7: Person2?
+obj7 = Person2(name: "Hitha")
+//obj7 = nil
+var obj8: Gadget1?
+obj8 = Gadget1(model: "Iphone")
+obj8?.owner = obj7
+obj7?.gadget = obj8
+//obj7 = nil
+//obj8 = nil
+//obj7?.gadget = nil
+obj8?.owner = nil
+
