@@ -40,3 +40,22 @@ func sayHello(name: String) -> String {
 }
 sayHello(name: "Nidhi")
 
+//closure
+var obj4 = {(name1: String) -> String in
+return "Hello \(name1)"
+}
+obj4("Nidhishree")
+
+//get each character from an array
+var str1 = ["Nitin","Cheeku","Jeevan"]
+for (inde, valu) in str1.enumerated() {
+    print("Index : \(inde)  Value : \(valu)")
+//    str1.append("Bindu")
+//    print(str1)
+    str1.insert("s", at: str1.endIndex)
+    print(str1)
+}
+
+var welcome = "hello"
+welcome.insert("!", at: welcome.endIndex)
+welcome.insert(contentsOf: "there", at: welcome.index(before: welcome.endIndex))
