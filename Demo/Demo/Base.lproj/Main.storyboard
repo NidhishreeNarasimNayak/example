@@ -69,6 +69,17 @@
                                     <action selector="onCLickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4l-WG-u8o"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJL-4N-hIq">
+                                <rect key="frame" x="153" y="735" width="108" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="NextPage">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XkT-4H-99l" kind="show" id="DCo-PZ-1v5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.54206980688825857" green="0.70521527574395149" blue="0.98132258650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -78,6 +89,7 @@
                     <connections>
                         <outlet property="headerLabel" destination="97Y-Ph-M1z" id="xcJ-Qy-MSl"/>
                         <outlet property="logo" destination="G4k-wa-6Xa" id="Ws7-cW-7ii"/>
+                        <outlet property="nextPageButton" destination="tJL-4N-hIq" id="IaS-Np-d37"/>
                         <outlet property="titleLabel" destination="1S7-OR-YBI" id="96y-JH-d4g"/>
                     </connections>
                 </viewController>

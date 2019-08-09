@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var nextPageButton: UIButton!
     @IBOutlet weak var logo: UIImageView!
     override func viewDidLoad() {
         
