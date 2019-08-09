@@ -77,7 +77,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XkT-4H-99l" kind="show" id="DCo-PZ-1v5"/>
+                                    <segue destination="wHc-ww-0QT" kind="show" identifier="showDetail" id="AHJ-Ou-sfb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,6 +90,7 @@
                         <outlet property="headerLabel" destination="97Y-Ph-M1z" id="xcJ-Qy-MSl"/>
                         <outlet property="logo" destination="G4k-wa-6Xa" id="Ws7-cW-7ii"/>
                         <outlet property="nextPageButton" destination="tJL-4N-hIq" id="IaS-Np-d37"/>
+                        <outlet property="textPass" destination="QPL-qX-Wgy" id="P3t-nb-AvW"/>
                         <outlet property="titleLabel" destination="1S7-OR-YBI" id="96y-JH-d4g"/>
                     </connections>
                 </viewController>
@@ -132,6 +133,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vee-vF-Usw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="857.97101449275374" y="126.5625"/>
+        </scene>
+        <!--Third PageVC View Controller-->
+        <scene sceneID="sd0-OS-Tv4">
+            <objects>
+                <viewController id="wHc-ww-0QT" customClass="ThirdPageVCViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OJI-8q-410">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.54206980689999995" green="0.70521527569999998" blue="0.98132258650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="m4f-Gg-hQE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dT-JA-shd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="133"/>
         </scene>
     </scenes>
     <resources>

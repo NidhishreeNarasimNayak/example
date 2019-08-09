@@ -13,6 +13,7 @@
 		EA80772F22FC1E250047108B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA80772E22FC1E250047108B /* Assets.xcassets */; };
 		EA80773222FC1E250047108B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA80773022FC1E250047108B /* LaunchScreen.storyboard */; };
 		EAA7307622FC4D2000789C92 /* SecondPageVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7307522FC4D2000789C92 /* SecondPageVCViewController.swift */; };
+		EADDD4F422FD4F0A0061CCC6 /* ThirdPageVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADDD4F322FD4F0A0061CCC6 /* ThirdPageVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA80773122FC1E250047108B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA80773322FC1E250047108B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA7307522FC4D2000789C92 /* SecondPageVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageVCViewController.swift; sourceTree = SOURCE_ROOT; };
+		EADDD4F322FD4F0A0061CCC6 /* ThirdPageVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EA80773022FC1E250047108B /* LaunchScreen.storyboard */,
 				EA80773322FC1E250047108B /* Info.plist */,
 				EAA7307522FC4D2000789C92 /* SecondPageVCViewController.swift */,
+				EADDD4F322FD4F0A0061CCC6 /* ThirdPageVCViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				EA80772A22FC1E1C0047108B /* ViewController.swift in Sources */,
 				EA80772822FC1E1C0047108B /* AppDelegate.swift in Sources */,
+				EADDD4F422FD4F0A0061CCC6 /* ThirdPageVCViewController.swift in Sources */,
 				EAA7307622FC4D2000789C92 /* SecondPageVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
