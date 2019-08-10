@@ -18,8 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-     
-        // Do any additional setup after loading the view.
+      //  setStatusBarBackgroundColor(color: UIColor.red)
+        headerLabel.layer.masksToBounds = true
+        headerLabel.layer.cornerRadius = 20
+        titleLabel.layer.masksToBounds = true
+        titleLabel.layer.cornerRadius = 20
+        setSubViewCenter()
     }
     
     //function for gesture creation
@@ -31,8 +35,18 @@ class ViewController: UIViewController {
 
         }
 
-        
     }
+    func setSubViewCenter() {
+        headerLabel.center.x = self.view.frame.maxX/2
+       logo.center.x = self.view.frame.maxX/2
+        textPass.center.x = self.view.frame.maxX/2
+       }
+//    func setStatusBarBackgroundColor(color: UIColor) {
+//        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else {return}
+//        statusBar.backgroundColor = color
+//    }
+    
+    
 
 }
 

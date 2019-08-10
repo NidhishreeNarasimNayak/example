@@ -32,14 +32,16 @@ class ThirdPageVCViewController: UIViewController {
     //func to animate headerLabel
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 6, animations:{
+        UIView.animate(withDuration: 5, animations:{
             self.headerLabel.center.y += 200
-            
-        } )
-        
+            self.headerLabel.center.x += 100
+            } )
+        }
+    
+    
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    
     
     
 }
