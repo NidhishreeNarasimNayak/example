@@ -10,6 +10,7 @@ import UIKit
 
 class SecondPageVCViewController: UIViewController {
 var textPass = ""
+    
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var secondPageHeaderLabel: UILabel!
     
@@ -17,11 +18,10 @@ var textPass = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        secondPageHeaderLabel.layer.masksToBounds = true
-        //secondPageHeaderLabel.layer.cornerRadius = 45
+        secondPageHeaderLabel.layer.masksToBounds = true //used in order to edit changes to header label
         colorChangeLabel()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
@@ -34,7 +34,7 @@ var textPass = ""
 //        viewColorChange.center = self.view.center
        // self.view.addSubview(viewColorChange)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(changeViewColor))
-        tapGesture.numberOfTapsRequired = 2
+        tapGesture.numberOfTapsRequired = 1
         secondPageHeaderLabel.isUserInteractionEnabled = true
         secondPageHeaderLabel.addGestureRecognizer(tapGesture)
         

@@ -11,20 +11,15 @@ import UIKit
 class ThirdPageVCViewController: UIViewController {
     var headerLabel: UILabel!
     var textEntered: String?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createHeaderLabel()
-            //creating a secondLabel for third view
-//        let secondLabel = UILabel()
-//        secondLabel.frame = CGRect(x:200,y:300, width: 100,height: 40)
-//        secondLabel.backgroundColor = UIColor.red
-       
-    }
+        }
     
     func createHeaderLabel() {
-        //creating a headerLabel for third View
         
+        //creating a headerLabel for third View
         headerLabel = UILabel()
         headerLabel.frame = CGRect(x: 200, y: 150, width: 100, height: 30)
         headerLabel.text = textEntered
@@ -34,8 +29,17 @@ class ThirdPageVCViewController: UIViewController {
         self.view.addSubview(headerLabel)
         
     }
+    //func to animate headerLabel
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 6, animations:{
+            self.headerLabel.center.y += 200
+            
+        } )
+        
+    }
     
-
-   
-
+    
+    
+    
 }

@@ -26,18 +26,13 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-
-                let controller = segue.destination as? ThirdPageVCViewController
+            let controller = segue.destination as? ThirdPageVCViewController
             controller?.textEntered = textPass.text
-//textPass.text = ""
+
         }
 
         
     }
 
-//    @IBAction func onCLickButton(_ sender: Any) {
-//        headerLabel.frame.origin = CGPoint(x: 56, y: 200)
-//    }
-    
 }
 
