@@ -9,35 +9,33 @@
 import UIKit
 
 class ThirdPageVCViewController: UIViewController {
-    
+    var headerLabel: UILabel!
     var textEntered: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let headerLabel = UILabel()
-        headerLabel.frame = CGRect(x: 100, y: 150, width: 100, height: 30)
+        createHeaderLabel()
+            //creating a secondLabel for third view
+//        let secondLabel = UILabel()
+//        secondLabel.frame = CGRect(x:200,y:300, width: 100,height: 40)
+//        secondLabel.backgroundColor = UIColor.red
+       
+    }
+    
+    func createHeaderLabel() {
+        //creating a headerLabel for third View
+        
+        headerLabel = UILabel()
+        headerLabel.frame = CGRect(x: 200, y: 150, width: 100, height: 30)
         headerLabel.text = textEntered
         headerLabel.textColor = UIColor.red
         headerLabel.font = UIFont(name: "GillSans-Bold", size: 17)
         headerLabel.numberOfLines = 4
-    
-        
-        // Do any additional setup after loading the view.
-        //adding the headerLabel to the viewcontroller
         self.view.addSubview(headerLabel)
+        
     }
     
+
    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
