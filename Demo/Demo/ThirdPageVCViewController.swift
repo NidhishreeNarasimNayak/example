@@ -22,7 +22,7 @@ class ThirdPageVCViewController: UIViewController {
         //creating a headerLabel for third View
         headerLabel = UILabel()
         headerLabel.frame = CGRect(x: 200, y: 150, width: 100, height: 30)
-        headerLabel.text = textEntered
+        headerLabel.text = "hbahsh"
         headerLabel.textColor = UIColor.red
         headerLabel.font = UIFont(name: "GillSans-Bold", size: 17)
         headerLabel.numberOfLines = 4

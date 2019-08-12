@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var textPass: UITextField!
     @IBOutlet weak var nextPageButton: UIButton!
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         titleLabel.layer.masksToBounds = true
         titleLabel.layer.cornerRadius = 20
         
-        setSubViewCenter()
-        
+        setSubViewCenter(isLandscape: false)
         self.textPass.delegate = self
         
     }
@@ -41,27 +41,41 @@ class ViewController: UIViewController,UITextFieldDelegate{
 
     }
     // to set all the subviews in center
-    func setSubViewCenter() {
-        let centerX = UIScreen.main.bounds.width/2
+    func setSubViewCenter(isLandscape: Bool) {
+        let centerX = isLandscape ? UIScreen.main.bounds.height/2 : UIScreen.main.bounds.width/2
+        print(centerX)
         headerLabel.center.x = centerX
         titleLabel.center.x = centerX
         logo.center.x = centerX
         textPass.center.x = centerX
         nextPageButton.center.x = centerX
+        nextButton.center.x = centerX
  }
-    
-//    func setStatusBarBackgroundColor(color: UIColor) {
-//        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else {return}
-//        statusBar.backgroundColor = color
-//    }
+
     //for returning when we press keyboard
     func textFieldShouldReturn(_ textField : UITextField) -> Bool
     {
         print("Inside return")
         textField.resignFirstResponder()
-        //self.view.endEditing(true)
-        return true
+                return true
     }
-}
 
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape\(self.view.bounds)")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                print("Landscape\(self.view.bounds)")
+                self.setSubViewCenter(isLandscape: false)
+            }
+           
+        } else {
+            print("Portrait\(self.view.bounds)")
+          
+            setSubViewCenter(isLandscape: true)
+        }
+    }
+    
+
+}
 
