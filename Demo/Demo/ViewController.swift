@@ -15,8 +15,8 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var textPass: UITextField!
     @IBOutlet weak var nextPageButton: UIButton!
     @IBOutlet weak var logo: UIImageView!
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
       //  setStatusBarBackgroundColor(color: UIColor.red)
         headerLabel.layer.masksToBounds = true
@@ -40,12 +40,16 @@ class ViewController: UIViewController,UITextFieldDelegate{
         }
 
     }
+    // to set all the subviews in center
     func setSubViewCenter() {
-        headerLabel.center.x = self.view.frame.maxX/2
-       logo.center.x = self.view.frame.maxX/2
-        textPass.center.x = self.view.frame.maxX/2
-        titleLabel.center.x = self.view.frame.maxX/2
-       }
+        let centerX = UIScreen.main.bounds.width/2
+        headerLabel.center.x = centerX
+        titleLabel.center.x = centerX
+        logo.center.x = centerX
+        textPass.center.x = centerX
+        nextPageButton.center.x = centerX
+ }
+    
 //    func setStatusBarBackgroundColor(color: UIColor) {
 //        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else {return}
 //        statusBar.backgroundColor = color
@@ -59,4 +63,5 @@ class ViewController: UIViewController,UITextFieldDelegate{
         return true
     }
 }
+
 
