@@ -28,6 +28,11 @@ class ViewController: UIViewController,UITextFieldDelegate{
         setSubViewCenter(isLandscape: false)
         self.textPass.delegate = self
         
+     //notification called when it goes to background
+  NotificationCenter.default.addObserver(self, selector: #selector(onWillGoBackground),name:UIApplication.willResignActiveNotification, object: nil)
+        
+        //notification called when comes to foreground
+        NotificationCenter.default.addObserver(self, selector: #selector(willComeToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     //function for gesture creation
@@ -75,7 +80,14 @@ class ViewController: UIViewController,UITextFieldDelegate{
             setSubViewCenter(isLandscape: true)
         }
     }
-    
-
+    //calling notification when the app goes to background
+    @objc func onWillGoBackground(_ notification : Notification){
+        self.view.backgroundColor = UIColor.lightGray
+    }
+    //calling function when it comes to foreground
+    @objc func willComeToForeground(_notification : Notification)
+    {
+        self.view.backgroundColor = UIColor.green
+    }
 }
 
