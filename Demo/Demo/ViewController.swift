@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate{
 
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -23,7 +23,11 @@ class ViewController: UIViewController {
         headerLabel.layer.cornerRadius = 20
         titleLabel.layer.masksToBounds = true
         titleLabel.layer.cornerRadius = 20
+        
         setSubViewCenter()
+        
+        self.textPass.delegate = self
+        
     }
     
     //function for gesture creation
@@ -40,13 +44,19 @@ class ViewController: UIViewController {
         headerLabel.center.x = self.view.frame.maxX/2
        logo.center.x = self.view.frame.maxX/2
         textPass.center.x = self.view.frame.maxX/2
+        titleLabel.center.x = self.view.frame.maxX/2
        }
 //    func setStatusBarBackgroundColor(color: UIColor) {
 //        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else {return}
 //        statusBar.backgroundColor = color
 //    }
-    
-    
-
+    //for returning when we press keyboard
+    func textFieldShouldReturn(_ textField : UITextField) -> Bool
+    {
+        print("Inside return")
+        textField.resignFirstResponder()
+        //self.view.endEditing(true)
+        return true
+    }
 }
 
