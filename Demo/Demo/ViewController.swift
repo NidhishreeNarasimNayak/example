@@ -17,6 +17,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       //  setStatusBarBackgroundColor(color: UIColor.red)
@@ -24,6 +25,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         headerLabel.layer.cornerRadius = 20
         titleLabel.layer.masksToBounds = true
         titleLabel.layer.cornerRadius = 20
+      
         
         setSubViewCenter(isLandscape: false)
         self.textPass.delegate = self
@@ -33,8 +35,30 @@ class ViewController: UIViewController,UITextFieldDelegate{
         
         //notification called when comes to foreground
         NotificationCenter.default.addObserver(self, selector: #selector(willComeToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if(string == "")
+        {
+            return true    //for backspace 
+        }
+        if (( string.rangeOfCharacter(from: CharacterSet.letters) ) != nil)
+       {
+        return true
+        }
+        else
+       {
+        return false
+        }
     }
     
+    
+
+    //    @objc func textFieldDidChangeAction() {
+//        print(textPass?.text as Any)
+//        textPass.text?.components(separatedBy: CharacterSet.capitalizedLetters)
+//
+//    }
     //function for gesture creation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -89,5 +113,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     {
         self.view.backgroundColor = UIColor.green
     }
+
+   
 }
 

@@ -22,7 +22,7 @@ class ThirdPageVCViewController: UIViewController {
         //creating a headerLabel for third View
         headerLabel = UILabel()
         headerLabel.frame = CGRect(x: 200, y: 150, width: 100, height: 30)
-        headerLabel.text = "hbahsh"
+        headerLabel.text = textEntered
         headerLabel.textColor = UIColor.red
         headerLabel.font = UIFont(name: "GillSans-Bold", size: 17)
         headerLabel.numberOfLines = 4
@@ -33,8 +33,8 @@ class ThirdPageVCViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 5, animations:{
-            self.headerLabel.center.y += 200
-            self.headerLabel.center.x += 100
+           self.headerLabel.center.y += 200
+           // self.headerLabel.center.x += 100
             } )
         }
     
