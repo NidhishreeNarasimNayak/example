@@ -48,7 +48,8 @@ var textPass = ""
     
    
     @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
         
     }
     
