@@ -40,10 +40,11 @@ class ViewController: UIViewController,UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if(string == "")
         {
-            return true    //for backspace 
+            return true    //for backspace
         }
         if (( string.rangeOfCharacter(from: CharacterSet.letters) ) != nil)
        {
+        print(CharacterSet.letters)
         return true
         }
         else
@@ -71,7 +72,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     }
     // to set all the subviews in center
     func setSubViewCenter(isLandscape: Bool) {
-        let centerX = isLandscape ? UIScreen.main.bounds.height/2 : UIScreen.main.bounds.width/2
+        let centerX = isLandscape ? UIScreen.main.bounds.width/2 : UIScreen.main.bounds.width/2
         print(centerX)
         headerLabel.center.x = centerX
         titleLabel.center.x = centerX
