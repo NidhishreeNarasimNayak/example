@@ -30,6 +30,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         setSubViewCenter(isLandscape: false)
         self.textPass.delegate = self
         
+        
      //notification called when it goes to background
   NotificationCenter.default.addObserver(self, selector: #selector(onWillGoBackground),name:UIApplication.willResignActiveNotification, object: nil)
         
