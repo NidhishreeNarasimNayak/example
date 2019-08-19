@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wordDictionary/ViewController.swift"
-            timestampString = "587900424.975361"
+            timestampString = "587914316.8616379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "wordMeaning()"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "wordMeaning(text:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wordDictionary/ViewController.swift"
-            timestampString = "587900429.517307"
+            timestampString = "587914316.8621089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "wordMeaning()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "wordMeaning(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wordDictionary/ViewController.swift"
+            timestampString = "587914348.202181"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "wordMeaning(text:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
