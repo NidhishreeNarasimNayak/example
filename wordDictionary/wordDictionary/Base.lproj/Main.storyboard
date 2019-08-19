@@ -38,11 +38,19 @@
                                     <action selector="wordMeaningTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhE-gm-uZL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-B8-ZdJ">
+                                <rect key="frame" x="99" y="274" width="236" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="labelWordEnteredMeaning" destination="M7k-B8-ZdJ" id="3m0-Fx-43k"/>
                         <outlet property="wordEntered" destination="gb8-sg-mgW" id="5h7-b6-Fr8"/>
                     </connections>
                 </viewController>

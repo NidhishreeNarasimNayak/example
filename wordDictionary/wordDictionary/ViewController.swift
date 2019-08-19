@@ -9,15 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
-
+    
     @IBOutlet weak var wordEntered: UITextField!
     //to replace appid and appkey
     
+    @IBOutlet weak var labelWordEnteredMeaning: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.wordEntered.delegate = self    //editing messages over here
-       
+        self.wordEntered.delegate = self    //editing messages over here
+        
         
     }
     
@@ -30,8 +31,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func wordMeaningTapped(_ sender: Any) {
         guard let word = wordEntered.text else { return }
         wordMeaning(text: word)
+        
     }
-
+    
     //codable way of accesing defination
     struct Root: Codable {
         let results: [Result]
@@ -47,19 +49,19 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     struct Sense: Codable {
         let definitions: [String]
-//        let subsenses: [definition]
+        //        let subsenses: [definition]
     }
     
     func wordMeaning(text: String) {
-        var storeword: String = ""
+        //var storeword: String = ""
         let appId = "cc996abf"
         let appKey = "ddbf412aaa7d58134da5a78042d34d5a"  //user values
         let language = "en-gb"
-      // let word = "Terror"
+        // let word = "Terror"
         let fields = "definitions"
         let strictMatch = "false"
         let word_id = text.lowercased()
-
+        
         guard let url = URL(string: "https://od-api.oxforddictionaries.com/api/v2/entries/\(language)/\(word_id)?fields=\(fields)&strictMatch=\(strictMatch)") else {
             return
         }
@@ -70,29 +72,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         let session = URLSession.shared
         _ = session.dataTask(with: request, completionHandler: { data, response, error in
-            if let response = response,
-                let data = data,
-                let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
-               // print(response)
-               // print(jsonData)
+            if let data = data {      
                 do {
                     let root =  try JSONDecoder().decode(Root.self, from: data)
-                   let results = root.results
-                    for result in results {
-                        for lexical in result.lexicalEntries {
-                            for  entry in lexical.entries {
-                                for sense in entry.senses {
-                                    for definition in sense.definitions {
-                                        print(definition)
-                                        
-//
-                                    }
-                                }
-                            }
-                        }
-                        
+                    let result = root.results.first
+                    let lexical = result?.lexicalEntries.first
+                    let entry = lexical?.entries.first
+                    let definitation = entry?.senses.first?.definitions.first
+                    DispatchQueue.main.async {
+                        self.updateLabel(definition: definitation)
                     }
-    
                 }
                     
                 catch {
@@ -107,8 +96,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
     }
     
-
-
-
+    func updateLabel(definition: String?) {
+        labelWordEnteredMeaning.text = definition
+    }
+    
+    
 }
 
