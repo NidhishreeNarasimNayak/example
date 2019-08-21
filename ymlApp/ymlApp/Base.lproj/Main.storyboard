@@ -91,11 +91,11 @@
                                 </constraints>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cfc-XB-ZfM">
-                                <rect key="frame" x="179.5" y="429.5" width="55" height="37"/>
+                                <rect key="frame" x="179.5" y="725" width="55" height="37"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LD-UN-7Zh">
                                 <rect key="frame" x="30" y="792" width="354" height="50"/>
-                                <color key="backgroundColor" red="0.54537093430323602" green="0.12387059360340121" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0tr-yd-EmN"/>
                                 </constraints>
@@ -107,12 +107,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Cfc-XB-ZfM" firstAttribute="leading" secondItem="D0B-9y-drk" secondAttribute="leading" constant="179.5" id="40N-zf-9M9"/>
                             <constraint firstItem="D0B-9y-drk" firstAttribute="trailing" secondItem="4LD-UN-7Zh" secondAttribute="trailing" constant="30" id="C4Q-lm-Dr5"/>
                             <constraint firstItem="3Qs-0r-sdc" firstAttribute="leading" secondItem="D0B-9y-drk" secondAttribute="leading" id="IaH-ru-ebT"/>
                             <constraint firstItem="3Qs-0r-sdc" firstAttribute="trailing" secondItem="D0B-9y-drk" secondAttribute="trailing" id="MRB-RI-UNT"/>
                             <constraint firstItem="D0B-9y-drk" firstAttribute="bottom" secondItem="3Qs-0r-sdc" secondAttribute="bottom" id="RPi-9i-h2I"/>
-                            <constraint firstItem="Cfc-XB-ZfM" firstAttribute="centerY" secondItem="hMX-3Q-F0d" secondAttribute="centerY" id="Rs6-bH-mLx"/>
-                            <constraint firstItem="Cfc-XB-ZfM" firstAttribute="centerX" secondItem="hMX-3Q-F0d" secondAttribute="centerX" id="e8m-Vi-XRp"/>
+                            <constraint firstItem="4LD-UN-7Zh" firstAttribute="top" secondItem="Cfc-XB-ZfM" secondAttribute="bottom" constant="30" id="Sxc-nY-328"/>
+                            <constraint firstItem="D0B-9y-drk" firstAttribute="trailing" secondItem="Cfc-XB-ZfM" secondAttribute="trailing" constant="179.5" id="ah3-5c-bbi"/>
                             <constraint firstItem="D0B-9y-drk" firstAttribute="bottom" secondItem="4LD-UN-7Zh" secondAttribute="bottom" constant="20" id="hBe-n5-ch0"/>
                             <constraint firstItem="mN3-Qz-aja" firstAttribute="leading" secondItem="D0B-9y-drk" secondAttribute="leading" constant="20" id="l66-oP-uBo"/>
                             <constraint firstItem="mN3-Qz-aja" firstAttribute="top" secondItem="D0B-9y-drk" secondAttribute="top" constant="16" id="s0f-eR-TTC"/>

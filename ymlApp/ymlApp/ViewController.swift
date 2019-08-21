@@ -51,14 +51,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return collectionView.bounds.size // to return cell  size as same as CV
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0.0  // to change the size of items and spacing between them
-//    }
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        print(scrollView.contentOffset)
-//        if(sc)
-//        //homeScreenPageControl.currentPage = 3
-//    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pagenumber = scrollView.contentOffset.x/scrollView.frame.width
+        homeScreenPageControl.currentPage = Int(pagenumber)
+       }
     
     
 }
