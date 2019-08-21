@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wordDictionary/ViewController.swift"
-            timestampString = "587917116.949982"
+            timestampString = "587978032.297902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "wordMeaning(text:)"
+            landmarkName = "updateLabel(definition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wordDictionary/ViewController.swift"
-            timestampString = "587917116.950483"
+            timestampString = "587978032.2984689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
