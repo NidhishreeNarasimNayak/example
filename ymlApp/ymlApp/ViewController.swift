@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var homeScreenPageControl: UIPageControl!
-    var imagenames: [String] = ["Image-0","Image-1","Image-2","Image-3"]
-    var headerTitle: [String] = ["State Farm","The Home Depot","PayPal","Molekule"]
-    var DescriptionLabel: [String] = ["All things insurance, all things banking, all in one app.","The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","The world's first intelligent air purifier, & the app putting clean air in people's hands." ]
-    var logoLabel: [String] = ["Logo-0","Logo-1","Logo-2","Logo-3"]
+    var imagenames: [String] = ["","Image-0","Image-1","Image-2","Image-3"]
+    var headerTitle: [String] = ["Hello.","State Farm","The Home Depot","PayPal","Molekule"]
+    var DescriptionLabel: [String] = ["We are a design and innovation agency, creating digital products and experiences that have a lasting impact.","All things insurance, all things banking, all in one app.","The ultimate power tool: A best-in-class digital experience for The Home Depot.","Payment giant goes mobile-by-design.","The world's first intelligent air purifier, & the app putting clean air in people's hands." ]
+    var logoLabel: [String] = ["","Logo-0","Logo-1","Logo-2","Logo-3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
