@@ -9,23 +9,53 @@
 import UIKit
 
 class WorkViewController: UIViewController {
-
+    
     @IBOutlet weak var workTableView: UITableView!
+    
+    var workScreenElements: [workElements] = [] //creating an array of objects
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        workScreenObjects()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func workScreenObjects() {
+        let northFace = workElements(imagename: "northFace", headertitle: "THE NORTH FACE", description: "How The North Face redefined loyalty to embrace the great outdoors.")
+        let cloverGo = workElements(imagename: "cloverGo", headertitle: "CLOVER", description: "How CLover Go has become an open ecosystem for point-of-sale payments.")
+        let creditOne = workElements(imagename: "creditOne", headertitle: "CREDIT ONE", description: "How Credit One has become America's fastest growing credit card issuer.")
+        workScreenElements = [northFace, cloverGo,creditOne]
+        
     }
-    */
+    
+}
 
+extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return workScreenElements.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "workCell", for: indexPath) as? WorkTableViewCell
+        let element = workScreenElements[indexPath.row]
+        cell?.workScreenImage.image = UIImage(named: element.imagename)
+        cell?.workScreenTitle.text = element.headertitle
+        cell?.workScreenDescription.text = element.description
+        return cell ?? UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let transitionToVc = self.storyboard?.instantiateViewController(withIdentifier: "WorkWebViewViewController") as! WorkWebViewViewController
+        self.navigationController?.pushViewController(transitionToVc, animated: true)
+    }
+    
+}
+struct workElements {
+    let imagename: String
+    let headertitle: String
+    let description: String
 }

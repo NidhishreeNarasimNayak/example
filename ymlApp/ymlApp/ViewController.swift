@@ -13,14 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var homeScreenPageControl: UIPageControl!
     
-    
-    
     var allElements: [homeScreenElements] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.isPagingEnabled = true
-        
-        
         homeScreenObjects()
         configurePageControl()
     }
@@ -40,8 +38,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allElements.count   //to return number of cells
     }
