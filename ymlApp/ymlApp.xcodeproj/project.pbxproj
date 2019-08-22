@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D2278230D5C2700789257 /* WorkViewController.swift */; };
+		EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */; };
 		EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */; };
 		EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65723044CAD00F50CBF /* AppDelegate.swift */; };
 		EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65923044CAD00F50CBF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA4D2278230D5C2700789257 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAEDF65423044CAD00F50CBF /* ymlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ymlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEDF65723044CAD00F50CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				EAEDF66023044CC200F50CBF /* LaunchScreen.storyboard */,
 				EAEDF66323044CC200F50CBF /* Info.plist */,
 				EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */,
+				EA4D2278230D5C2700789257 /* WorkViewController.swift */,
+				EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */,
 			);
 			path = ymlApp;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */,
+				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
+				EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */,
 				EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */,
 				EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */,
 			);
