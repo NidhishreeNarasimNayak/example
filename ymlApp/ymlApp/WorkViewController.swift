@@ -21,9 +21,9 @@ class WorkViewController: UIViewController {
     }
     
     func workScreenObjects() {
-        let northFace = workElements(imagename: "northFace", headertitle: "THE NORTH FACE", description: "How The North Face redefined loyalty to embrace the great outdoors.")
-        let cloverGo = workElements(imagename: "cloverGo", headertitle: "CLOVER", description: "How CLover Go has become an open ecosystem for point-of-sale payments.")
-        let creditOne = workElements(imagename: "creditOne", headertitle: "CREDIT ONE", description: "How Credit One has become America's fastest growing credit card issuer.")
+        let northFace = workElements(imagename: "northFace", headertitle: "THE NORTH FACE", description: "How The North Face redefined loyalty to embrace the great outdoors.",url: "https://ymedialabs.com/project/the-north-face")
+        let cloverGo = workElements(imagename: "cloverGo", headertitle: "CLOVER", description: "How CLover Go has become an open ecosystem for point-of-sale payments.",url: "https://ymedialabs.com/project/clover")
+        let creditOne = workElements(imagename: "creditOne", headertitle: "CREDIT ONE", description: "How Credit One has become America's fastest growing credit card issuer.",url: "https://ymedialabs.com/project/credit-one")
         workScreenElements = [northFace, cloverGo,creditOne]
         
     }
@@ -50,6 +50,7 @@ extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let transitionToVc = self.storyboard?.instantiateViewController(withIdentifier: "WorkWebViewViewController") as! WorkWebViewViewController
+        transitionToVc.url = URL(string: workScreenElements[indexPath.row].geturl())
         self.navigationController?.pushViewController(transitionToVc, animated: true)
     }
     
@@ -58,4 +59,8 @@ struct workElements {
     let imagename: String
     let headertitle: String
     let description: String
+    let url:String
+    func geturl() -> String {
+        return url
+    }
 }

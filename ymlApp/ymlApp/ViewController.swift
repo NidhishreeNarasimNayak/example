@@ -50,7 +50,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         cell?.homeScreenImageView.image = UIImage(named: element.imagename)
         
         cell?.homeScreenHeaderLabel.text = element.headerTitle
-        cell?.homeScreenHeaderLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        //cell?.homeScreenHeaderLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
         cell?.homeScreenDescriptionLabel.text = element.descriptionLabel
         cell?.homeScreenDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0)
         cell?.homeScreenLogoLabel.image = UIImage(named: element.logoLabel)
