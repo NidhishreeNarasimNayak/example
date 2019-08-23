@@ -17,7 +17,6 @@ class WorkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         workScreenObjects()
-        
     }
     
     func workScreenObjects() {
@@ -25,9 +24,7 @@ class WorkViewController: UIViewController {
         let cloverGo = workElements(imagename: "cloverGo", headertitle: "CLOVER", description: "How CLover Go has become an open ecosystem for point-of-sale payments.",url: "https://ymedialabs.com/project/clover")
         let creditOne = workElements(imagename: "creditOne", headertitle: "CREDIT ONE", description: "How Credit One has become America's fastest growing credit card issuer.",url: "https://ymedialabs.com/project/credit-one")
         workScreenElements = [northFace, cloverGo,creditOne]
-        
-    }
-    
+        }
 }
 
 extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
