@@ -55,6 +55,7 @@ extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
 }
+//structure for all my static elements
 struct workElements {
     let imagename: String
     let headertitle: String

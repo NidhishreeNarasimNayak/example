@@ -14,8 +14,8 @@ class WorkTableViewCell: UITableViewCell {
     @IBOutlet weak var workScreenDescription: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
+    
     
 }
