@@ -162,34 +162,43 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04C-LS-uMd">
-                                                    <rect key="frame" x="23" y="168" width="361" height="21"/>
+                                                    <rect key="frame" x="23" y="248" width="361" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="RgN-Mt-K7o"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HFY-uI-Tn5">
-                                                    <rect key="frame" x="23" y="23" width="351" height="120"/>
+                                                    <rect key="frame" x="23" y="23" width="351" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="120" id="Pmb-SK-l6k"/>
+                                                        <constraint firstAttribute="height" constant="200" id="Pmb-SK-l6k"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-jd-wkF">
-                                                    <rect key="frame" x="23" y="214" width="361" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-jd-wkF">
+                                                    <rect key="frame" x="23" y="314" width="271" height="20.5"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="04C-LS-uMd" secondAttribute="trailing" constant="10" id="2qM-hi-9RO"/>
-                                                <constraint firstItem="4zu-jd-wkF" firstAttribute="top" secondItem="04C-LS-uMd" secondAttribute="bottom" constant="25" id="7sb-Ca-POF"/>
+                                                <constraint firstItem="4zu-jd-wkF" firstAttribute="top" secondItem="04C-LS-uMd" secondAttribute="bottom" constant="10" id="7sb-Ca-POF"/>
                                                 <constraint firstItem="4zu-jd-wkF" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="99O-Wf-Hpc"/>
                                                 <constraint firstItem="04C-LS-uMd" firstAttribute="top" secondItem="HFY-uI-Tn5" secondAttribute="bottom" constant="25" id="Aw1-PV-wB1"/>
                                                 <constraint firstItem="04C-LS-uMd" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="J7g-cv-ZYp"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="HFY-uI-Tn5" secondAttribute="trailing" constant="20" id="NZH-Ij-A8B"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="4zu-jd-wkF" secondAttribute="trailing" constant="10" id="Wcl-TJ-L40"/>
                                                 <constraint firstItem="HFY-uI-Tn5" firstAttribute="top" secondItem="SLk-XI-1IO" secondAttribute="topMargin" constant="12" id="Ytc-bv-Pd9"/>
                                                 <constraint firstItem="HFY-uI-Tn5" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="gVK-y2-XPX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4zu-jd-wkF" secondAttribute="trailing" constant="100" id="hEj-Bv-Vbe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -248,11 +257,29 @@
             </objects>
             <point key="canvasLocation" x="2660.8695652173915" y="-86.383928571428569"/>
         </scene>
+        <!--Gms Map View Controller-->
+        <scene sceneID="krZ-k1-gSW">
+            <objects>
+                <viewController id="RTD-4k-5lk" customClass="GmsMapViewController" customModule="ymlApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ods-Fi-NIH" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kwg-53-I60"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ods-Fi-NIH" id="K9a-tX-z5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYX-xT-bad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5433" y="-59"/>
+        </scene>
         <!--Contacts-->
         <scene sceneID="HF4-t5-txT">
             <objects>
                 <viewController storyboardIdentifier="ContactsViewController" id="Stq-dt-oP3" customClass="ContactsViewController" customModule="ymlApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4W9-xv-ptO">
+                    <view key="view" contentMode="scaleToFill" id="4W9-xv-ptO" customClass="GMSMapView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -392,6 +419,14 @@
                                 <color key="textColor" red="0.30477650890000002" green="0.63989780200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-Y3-GIR">
+                                <rect key="frame" x="144" y="734" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="RTD-4k-5lk" kind="show" id="73Z-Uh-Saf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -438,11 +473,13 @@
                     <connections>
                         <outlet property="contactLabel" destination="EI7-dt-aZz" id="PvN-F3-Ltv"/>
                         <outlet property="lblMail" destination="d5Q-d3-Cfm" id="ACt-Yy-vMT"/>
+                        <outlet property="locationLabel1" destination="vlv-aZ-RbD" id="Poq-Sz-mvK"/>
+                        <outlet property="locationLabel2" destination="pcl-Bj-LAM" id="LSm-ma-iBY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCY-VP-oty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5871.0144927536239" y="-161.38392857142856"/>
+            <point key="canvasLocation" x="6044.9275362318849" y="-171.42857142857142"/>
         </scene>
         <!--Item-->
         <scene sceneID="MWB-Cx-kKh">

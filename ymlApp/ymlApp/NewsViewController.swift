@@ -52,7 +52,8 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.bounds.height
+        return   tableView.bounds.height
+       
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let newWebViewVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: WorkWebViewViewController.self)) as? WorkWebViewViewController

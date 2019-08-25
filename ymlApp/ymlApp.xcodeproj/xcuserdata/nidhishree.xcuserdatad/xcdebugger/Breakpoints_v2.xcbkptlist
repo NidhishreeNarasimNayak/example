@@ -103,7 +103,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ymlApp/NewsViewController.swift"
-            timestampString = "588312921.405159"
+            timestampString = "588337943.1070319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -119,12 +119,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ymlApp/ContactsViewController.swift"
-            timestampString = "588334911.915877"
+            timestampString = "588430585.451696"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "actionTapped(_:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

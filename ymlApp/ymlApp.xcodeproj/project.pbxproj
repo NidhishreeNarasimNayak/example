@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0115E587999A75CB45BAC8BA /* Pods_ymlApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B928DB661BB3A2BAA9ADE6B0 /* Pods_ymlApp.framework */; };
+		EA04A98F231161E300521D7E /* GmsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04A98E231161E300521D7E /* GmsMapViewController.swift */; };
 		EA336733230FC918005D4ACB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA336732230FC918005D4ACB /* NewsViewController.swift */; };
 		EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */; };
 		EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B52FDE2F1631BEBAC119D64 /* Pods-ymlApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ymlApp.debug.xcconfig"; path = "Target Support Files/Pods-ymlApp/Pods-ymlApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B928DB661BB3A2BAA9ADE6B0 /* Pods_ymlApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ymlApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04FD7D42688CEE114F17151 /* Pods-ymlApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ymlApp.release.xcconfig"; path = "Target Support Files/Pods-ymlApp/Pods-ymlApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA04A98E231161E300521D7E /* GmsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmsMapViewController.swift; sourceTree = "<group>"; };
 		EA336732230FC918005D4ACB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWebViewViewController.swift; sourceTree = "<group>"; };
@@ -43,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0115E587999A75CB45BAC8BA /* Pods_ymlApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C98D6FF8B639E8CCE90208B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B928DB661BB3A2BAA9ADE6B0 /* Pods_ymlApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D78D90D4F90AD50C4FAEF0F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B52FDE2F1631BEBAC119D64 /* Pods-ymlApp.debug.xcconfig */,
+				D04FD7D42688CEE114F17151 /* Pods-ymlApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EAEDF64B23044CAC00F50CBF = {
 			isa = PBXGroup;
 			children = (
 				EAEDF65623044CAD00F50CBF /* ymlApp */,
 				EAEDF65523044CAD00F50CBF /* Products */,
+				D78D90D4F90AD50C4FAEF0F3 /* Pods */,
+				C98D6FF8B639E8CCE90208B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +107,7 @@
 				EA336732230FC918005D4ACB /* NewsViewController.swift */,
 				EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */,
 				EACE2D0D231104EA00F9474B /* ContactsViewController.swift */,
+				EA04A98E231161E300521D7E /* GmsMapViewController.swift */,
 			);
 			path = ymlApp;
 			sourceTree = "<group>";
@@ -92,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAEDF66623044CC200F50CBF /* Build configuration list for PBXNativeTarget "ymlApp" */;
 			buildPhases = (
+				6285D35A5E139457C80722D6 /* [CP] Check Pods Manifest.lock */,
 				EAEDF65023044CAD00F50CBF /* Sources */,
 				EAEDF65123044CAD00F50CBF /* Frameworks */,
 				EAEDF65223044CAD00F50CBF /* Resources */,
+				CE40705766EF4B8B386ABB18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +180,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6285D35A5E139457C80722D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ymlApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE40705766EF4B8B386ABB18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAEDF65023044CAD00F50CBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -159,6 +230,7 @@
 				EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */,
 				EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */,
 				EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */,
+				EA04A98F231161E300521D7E /* GmsMapViewController.swift in Sources */,
 				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
 				EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */,
 				EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */,
@@ -308,6 +380,7 @@
 		};
 		EAEDF66723044CC200F50CBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B52FDE2F1631BEBAC119D64 /* Pods-ymlApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,6 +398,7 @@
 		};
 		EAEDF66823044CC200F50CBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04FD7D42688CEE114F17151 /* Pods-ymlApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
