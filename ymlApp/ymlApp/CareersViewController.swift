@@ -12,6 +12,7 @@ import HCVimeoVideoExtractor
 class CareersViewController: UIViewController {
     
     @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -51,7 +52,7 @@ extension CareersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CareersTableViewCell.self)) as? CareersTableViewCell {
-            cell.backgroundColor = UIColor.black
+            cell.contentView.backgroundColor = .yellow
             return cell
         }
         return CareersTableViewCell()

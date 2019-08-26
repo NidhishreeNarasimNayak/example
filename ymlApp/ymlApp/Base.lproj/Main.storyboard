@@ -516,7 +516,7 @@
                                 <rect key="frame" x="0.0" y="342" width="414" height="471"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CareersTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="careercell" rowHeight="398" id="2R5-UX-hRI" customClass="CareersTableViewCell" customModule="ymlApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CareersTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CareersTableViewCell" rowHeight="398" id="2R5-UX-hRI" customClass="CareersTableViewCell" customModule="ymlApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="398"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2R5-UX-hRI" id="3FH-EC-roe">
@@ -588,6 +588,7 @@
                     <tabBarItem key="tabBarItem" title="Careers" image="icon_carrers" id="LHa-5j-s0V"/>
                     <navigationItem key="navigationItem" id="Xmo-WL-b9t"/>
                     <connections>
+                        <outlet property="tableView" destination="mCT-Zd-pzJ" id="5vb-J5-4DG"/>
                         <outlet property="videoView" destination="j6z-t5-ypA" id="nXt-W3-htS"/>
                     </connections>
                 </viewController>
