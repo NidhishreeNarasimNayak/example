@@ -14,6 +14,8 @@
 		EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */; };
 		EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D2278230D5C2700789257 /* WorkViewController.swift */; };
 		EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */; };
+		EA5132502313A7E5009F28C9 /* CareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51324F2313A7E5009F28C9 /* CareersViewController.swift */; };
+		EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */; };
 		EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */; };
 		EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE2D0D231104EA00F9474B /* ContactsViewController.swift */; };
 		EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65723044CAD00F50CBF /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWebViewViewController.swift; sourceTree = "<group>"; };
 		EA4D2278230D5C2700789257 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		EA51324F2313A7E5009F28C9 /* CareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersViewController.swift; sourceTree = "<group>"; };
+		EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersTableViewCell.swift; sourceTree = "<group>"; };
 		EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EACE2D0D231104EA00F9474B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EAEDF65423044CAD00F50CBF /* ymlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ymlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 				EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */,
 				EACE2D0D231104EA00F9474B /* ContactsViewController.swift */,
 				EA04A98E231161E300521D7E /* GmsMapViewController.swift */,
+				EA51324F2313A7E5009F28C9 /* CareersViewController.swift */,
+				EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */,
 			);
 			path = ymlApp;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 				EAEDF65123044CAD00F50CBF /* Frameworks */,
 				EAEDF65223044CAD00F50CBF /* Resources */,
 				CE40705766EF4B8B386ABB18 /* [CP] Copy Pods Resources */,
+				7CA9433E5620E52682E629A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +210,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7CA9433E5620E52682E629A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ymlApp/Pods-ymlApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE40705766EF4B8B386ABB18 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,8 +256,10 @@
 				EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */,
 				EA04A98F231161E300521D7E /* GmsMapViewController.swift in Sources */,
 				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
+				EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */,
 				EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */,
 				EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */,
+				EA5132502313A7E5009F28C9 /* CareersViewController.swift in Sources */,
 				EA336733230FC918005D4ACB /* NewsViewController.swift in Sources */,
 				EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */,
 				EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */,
