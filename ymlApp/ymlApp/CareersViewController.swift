@@ -11,6 +11,18 @@ import  AVKit
 import HCVimeoVideoExtractor
 class CareersViewController: UIViewController {
     
+    struct Root: Decodable{
+        let data: [Data]
+    }
+    
+    struct Data: Decodable{
+        let domain: String
+        let position: String
+        let location: String
+    }
+    
+    var jsonItems: [Data] = []
+    
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
