@@ -10,10 +10,12 @@ import UIKit
 
 class ContactsViewController: UIViewController {
     
-    
+   
     
     @IBOutlet weak var locationLabel1: UILabel!
     @IBOutlet weak var locationLabel2: UILabel!
+    
+    
     @IBOutlet weak var lblMail: UILabel!
     @IBOutlet weak var contactLabel: UILabel!
     var locationTapGesture1: UITapGestureRecognizer!
@@ -34,7 +36,7 @@ class ContactsViewController: UIViewController {
         let mailTap = UITapGestureRecognizer(target:self, action: Selector(("actionTappedMail:")))
         contactLabel.addGestureRecognizer(contactTap)
         lblMail.addGestureRecognizer(mailTap)
-        locationTapGesture1 = UITapGestureRecognizer(target: self, action: #selector(showLocationOnMaps(_:)))
+        locationTapGesture1 = UITapGestureRecognizer(target: self, action: Selector(("showLocationOnMaps:")))
         locationTapGesture2 = UITapGestureRecognizer(target: self, action: #selector(showLocationOnMaps(_:)))
         locationLabel1.addGestureRecognizer(locationTapGesture1)
         locationLabel2.addGestureRecognizer(locationTapGesture2)
@@ -72,8 +74,8 @@ class ContactsViewController: UIViewController {
                 
                 googleMapsVC.latitude = Double(SVlat)
                 googleMapsVC.longitude = Double(SVlong)
-                googleMapsVC.marker.title = "California"
-                googleMapsVC.marker.snippet = "USA"
+                googleMapsVC.marker?.title = "California"
+                googleMapsVC.marker?.snippet = "USA"
                 self.navigationController?.pushViewController(googleMapsVC, animated: true)
             }
         }
@@ -83,8 +85,8 @@ class ContactsViewController: UIViewController {
             {
                 googleMapsVC.latitude = Double(BangaloreLat)
                 googleMapsVC.longitude = Double(BangaloreLong)
-                googleMapsVC.marker.title = "Bangalore"
-                googleMapsVC.marker.snippet = "India"
+                googleMapsVC.marker?.title = "Bangalore"
+                googleMapsVC.marker?.snippet = "India"
                 self.navigationController?.pushViewController(googleMapsVC, animated: true)
             }
             

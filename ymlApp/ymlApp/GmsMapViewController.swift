@@ -8,25 +8,20 @@
 
 import UIKit
 import GoogleMaps
-//let marker = GMSMarker()
-class GmsMapViewController: UIViewController {
-    var latitude: Double = 0.0
-    var longitude: Double = 0.0
-    let marker = GMSMarker()
 
+class GmsMapViewController: UIViewController {
+    var latitude = 0.0
+    var longitude = 0.0
+    var marker: GMSMarker?
+    
     @IBOutlet var mapView: GMSMapView!
-    override func viewDidLoad() {
+    override func viewDidLoad() {	
         super.viewDidLoad()
         
-  let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: -37.8136, longitude: 144.9631, zoom: 4.0)
+        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 13.0)
         mapView.camera = camera
-           // marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        let marker = GMSMarker()
-       // marker.title = "Sydney"
-       // marker.snippet = "Aus"
-        marker.map = mapView
+        marker = GMSMarker()
+        marker?.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        marker?.map = mapView
     }
-    
-
-   
 }

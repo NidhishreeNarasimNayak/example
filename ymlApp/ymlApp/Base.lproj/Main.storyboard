@@ -260,7 +260,7 @@
         <!--Gms Map View Controller-->
         <scene sceneID="krZ-k1-gSW">
             <objects>
-                <viewController id="RTD-4k-5lk" customClass="GmsMapViewController" customModule="ymlApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GmsMapViewController" id="RTD-4k-5lk" customClass="GmsMapViewController" customModule="ymlApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ods-Fi-NIH" customClass="GMSMapView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
         <scene sceneID="HF4-t5-txT">
             <objects>
                 <viewController storyboardIdentifier="ContactsViewController" id="Stq-dt-oP3" customClass="ContactsViewController" customModule="ymlApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4W9-xv-ptO" customClass="GMSMapView">
+                    <view key="view" contentMode="scaleToFill" id="4W9-xv-ptO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -377,13 +377,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linkedln" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-aZ-RbD">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linkedln" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-aZ-RbD">
                                 <rect key="frame" x="20" y="402" width="194" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.30477650890000002" green="0.63989780200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcl-Bj-LAM">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcl-Bj-LAM">
                                 <rect key="frame" x="20" y="433" width="194" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.30477650890000002" green="0.63989780200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -395,7 +395,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silicon Valley, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPX-QL-KN3">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silicon Valley, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPX-QL-KN3">
                                 <rect key="frame" x="20" y="515" width="194" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.30477650890000002" green="0.63989780200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -419,14 +419,6 @@
                                 <color key="textColor" red="0.30477650890000002" green="0.63989780200000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-Y3-GIR">
-                                <rect key="frame" x="144" y="734" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="RTD-4k-5lk" kind="show" id="73Z-Uh-Saf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -473,25 +465,25 @@
                     <connections>
                         <outlet property="contactLabel" destination="EI7-dt-aZz" id="PvN-F3-Ltv"/>
                         <outlet property="lblMail" destination="d5Q-d3-Cfm" id="ACt-Yy-vMT"/>
-                        <outlet property="locationLabel1" destination="vlv-aZ-RbD" id="Poq-Sz-mvK"/>
-                        <outlet property="locationLabel2" destination="pcl-Bj-LAM" id="LSm-ma-iBY"/>
+                        <outlet property="locationLabel1" destination="rPX-QL-KN3" id="ogs-dd-lZG"/>
+                        <outlet property="locationLabel2" destination="ZGx-aE-485" id="fq9-jv-pnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCY-VP-oty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6044.9275362318849" y="-171.42857142857142"/>
         </scene>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="MWB-Cx-kKh">
             <objects>
                 <viewController id="gHS-7h-DaP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FKW-4x-Qqt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lXC-fN-7lp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BYD-3Y-h54"/>
+                    <tabBarItem key="tabBarItem" title="About" image="icon_about_us" id="BYD-3Y-h54"/>
                     <navigationItem key="navigationItem" id="pQz-Ym-5rZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kN-5w-ysA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -677,6 +669,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_about_us" width="16.666666030883789" height="16.666666030883789"/>
         <image name="icon_contact_us" width="16.666666030883789" height="16.666666030883789"/>
         <image name="icon_news" width="16.666666030883789" height="16.666666030883789"/>
         <image name="icon_work" width="16.666666030883789" height="16.666666030883789"/>
