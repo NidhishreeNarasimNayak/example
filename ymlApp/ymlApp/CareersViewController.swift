@@ -51,9 +51,13 @@ extension CareersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CareersTableViewCell.self)) as? CareersTableViewCell {
+            cell.backgroundColor = UIColor.black
             return cell
         }
         return CareersTableViewCell()
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.bounds.height
     }
     
     
