@@ -27,6 +27,7 @@ extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "workCell", for: indexPath) as? WorkTableViewCell
+        cell?.selectionStyle = .none
         let element = workType.workScreen[indexPath.row]
         cell?.workScreenImage.image = UIImage(named: element.imagename)
         cell?.workScreenTitle.text = element.headertitle
