@@ -18,6 +18,8 @@
 		EA4DA03F2314F846007BD6EB /* WorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA03E2314F846007BD6EB /* WorkViewModel.swift */; };
 		EA4DA04623152233007BD6EB /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA04523152233007BD6EB /* MainScreen.swift */; };
 		EA4DA0482315231F007BD6EB /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA0472315231F007BD6EB /* MainScreenViewModel.swift */; };
+		EA4DA04A231534EE007BD6EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA049231534EE007BD6EB /* ContactsModel.swift */; };
+		EA4DA04C2315373A007BD6EB /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA04B2315373A007BD6EB /* ContactsViewModel.swift */; };
 		EA5132502313A7E5009F28C9 /* CareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51324F2313A7E5009F28C9 /* CareersViewController.swift */; };
 		EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */; };
 		EA51325523142D6A009F28C9 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51325423142D6A009F28C9 /* NewsModel.swift */; };
@@ -45,6 +47,8 @@
 		EA4DA03E2314F846007BD6EB /* WorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkViewModel.swift; path = ymlApp/WorkViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EA4DA04523152233007BD6EB /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		EA4DA0472315231F007BD6EB /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreenViewModel.swift; path = ymlApp/MainScreenViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EA4DA049231534EE007BD6EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		EA4DA04B2315373A007BD6EB /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsViewModel.swift; path = ymlApp/ContactsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EA51324F2313A7E5009F28C9 /* CareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersViewController.swift; sourceTree = "<group>"; };
 		EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersTableViewCell.swift; sourceTree = "<group>"; };
 		EA51325423142D6A009F28C9 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				EA51325423142D6A009F28C9 /* NewsModel.swift */,
 				EA4DA03C2314F742007BD6EB /* Work.swift */,
 				EA4DA04523152233007BD6EB /* MainScreen.swift */,
+				EA4DA049231534EE007BD6EB /* ContactsModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				EA5132572314304F009F28C9 /* NewsViewModel.swift */,
 				EA4DA03E2314F846007BD6EB /* WorkViewModel.swift */,
 				EA4DA0472315231F007BD6EB /* MainScreenViewModel.swift */,
+				EA4DA04B2315373A007BD6EB /* ContactsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -294,11 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */,
+				EA4DA04C2315373A007BD6EB /* ContactsViewModel.swift in Sources */,
 				EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */,
 				EA4DA03D2314F742007BD6EB /* Work.swift in Sources */,
 				EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */,
 				EA04A98F231161E300521D7E /* GmsMapViewController.swift in Sources */,
 				EA4DA0482315231F007BD6EB /* MainScreenViewModel.swift in Sources */,
+				EA4DA04A231534EE007BD6EB /* ContactsModel.swift in Sources */,
 				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
 				EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */,
 				EA4DA04623152233007BD6EB /* MainScreen.swift in Sources */,
