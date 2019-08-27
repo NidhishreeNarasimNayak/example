@@ -14,6 +14,4 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var homeScreenHeaderLabel: UILabel!
     @IBOutlet weak var homeScreenDescriptionLabel: UILabel!
     @IBOutlet weak var homeScreenLogoLabel: UIImageView!
-    
-    
 }

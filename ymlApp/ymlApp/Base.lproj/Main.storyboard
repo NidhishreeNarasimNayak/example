@@ -154,18 +154,15 @@
                                 <rect key="frame" x="0.0" y="191" width="414" height="622"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="490" id="4Sw-mP-V7t" customClass="NewsTableViewCell" customModule="ymlApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="490"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="400" id="4Sw-mP-V7t" customClass="NewsTableViewCell" customModule="ymlApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Sw-mP-V7t" id="SLk-XI-1IO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="489.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="399.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04C-LS-uMd">
-                                                    <rect key="frame" x="23" y="248" width="361" height="56"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="56" id="RgN-Mt-K7o"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04C-LS-uMd">
+                                                    <rect key="frame" x="23" y="248" width="361" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -176,8 +173,8 @@
                                                         <constraint firstAttribute="height" constant="200" id="Pmb-SK-l6k"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-jd-wkF">
-                                                    <rect key="frame" x="23" y="314" width="271" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-jd-wkF">
+                                                    <rect key="frame" x="23" y="288.5" width="356" height="90.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -191,14 +188,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="04C-LS-uMd" secondAttribute="trailing" constant="10" id="2qM-hi-9RO"/>
-                                                <constraint firstItem="4zu-jd-wkF" firstAttribute="top" secondItem="04C-LS-uMd" secondAttribute="bottom" constant="10" id="7sb-Ca-POF"/>
+                                                <constraint firstItem="4zu-jd-wkF" firstAttribute="top" secondItem="04C-LS-uMd" secondAttribute="bottom" constant="20" id="7sb-Ca-POF"/>
                                                 <constraint firstItem="4zu-jd-wkF" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="99O-Wf-Hpc"/>
                                                 <constraint firstItem="04C-LS-uMd" firstAttribute="top" secondItem="HFY-uI-Tn5" secondAttribute="bottom" constant="25" id="Aw1-PV-wB1"/>
                                                 <constraint firstItem="04C-LS-uMd" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="J7g-cv-ZYp"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="HFY-uI-Tn5" secondAttribute="trailing" constant="20" id="NZH-Ij-A8B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4zu-jd-wkF" secondAttribute="bottom" constant="10" id="YCq-z2-TJP"/>
                                                 <constraint firstItem="HFY-uI-Tn5" firstAttribute="top" secondItem="SLk-XI-1IO" secondAttribute="topMargin" constant="12" id="Ytc-bv-Pd9"/>
                                                 <constraint firstItem="HFY-uI-Tn5" firstAttribute="leading" secondItem="SLk-XI-1IO" secondAttribute="leadingMargin" constant="3" id="gVK-y2-XPX"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="4zu-jd-wkF" secondAttribute="trailing" constant="100" id="hEj-Bv-Vbe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4zu-jd-wkF" secondAttribute="trailing" constant="15" id="hEj-Bv-Vbe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

@@ -12,10 +12,4 @@ class WorkTableViewCell: UITableViewCell {
     @IBOutlet weak var workScreenImage: UIImageView!
     @IBOutlet weak var workScreenTitle: UILabel!
     @IBOutlet weak var workScreenDescription: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-    
-    
 }
