@@ -24,6 +24,9 @@
 		EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */; };
 		EA51325523142D6A009F28C9 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51325423142D6A009F28C9 /* NewsModel.swift */; };
 		EA5132582314304F009F28C9 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5132572314304F009F28C9 /* NewsViewModel.swift */; };
+		EA5970B42316426500A1AD84 /* Career.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5970B32316426500A1AD84 /* Career.swift */; };
+		EA5970B62316496200A1AD84 /* CareerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5970B52316496200A1AD84 /* CareerVM.swift */; };
+		EA5970B82316623200A1AD84 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5970B72316623200A1AD84 /* NetworkManager.swift */; };
 		EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */; };
 		EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE2D0D231104EA00F9474B /* ContactsViewController.swift */; };
 		EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65723044CAD00F50CBF /* AppDelegate.swift */; };
@@ -53,6 +56,9 @@
 		EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersTableViewCell.swift; sourceTree = "<group>"; };
 		EA51325423142D6A009F28C9 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		EA5132572314304F009F28C9 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewModel.swift; path = ymlApp/NewsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EA5970B32316426500A1AD84 /* Career.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Career.swift; sourceTree = "<group>"; };
+		EA5970B52316496200A1AD84 /* CareerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CareerVM.swift; path = ymlApp/CareerVM.swift; sourceTree = SOURCE_ROOT; };
+		EA5970B72316623200A1AD84 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ymlApp/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EACE2D0D231104EA00F9474B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EAEDF65423044CAD00F50CBF /* ymlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ymlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +102,10 @@
 		EA4DA03B2314F59E007BD6EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EACE2D0D231104EA00F9474B /* ContactsViewController.swift */,
+				EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */,
+				EA51324F2313A7E5009F28C9 /* CareersViewController.swift */,
+				EA04A98E231161E300521D7E /* GmsMapViewController.swift */,
 				EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */,
 				EAEDF65923044CAD00F50CBF /* ViewController.swift */,
 				EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */,
@@ -114,6 +124,7 @@
 				EA4DA03C2314F742007BD6EB /* Work.swift */,
 				EA4DA04523152233007BD6EB /* MainScreen.swift */,
 				EA4DA049231534EE007BD6EB /* ContactsModel.swift */,
+				EA5970B32316426500A1AD84 /* Career.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,6 +136,8 @@
 				EA4DA03E2314F846007BD6EB /* WorkViewModel.swift */,
 				EA4DA0472315231F007BD6EB /* MainScreenViewModel.swift */,
 				EA4DA04B2315373A007BD6EB /* ContactsViewModel.swift */,
+				EA5970B52316496200A1AD84 /* CareerVM.swift */,
+				EA5970B72316623200A1AD84 /* NetworkManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -150,18 +163,14 @@
 		EAEDF65623044CAD00F50CBF /* ymlApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAEDF65723044CAD00F50CBF /* AppDelegate.swift */,
 				EA4DA03B2314F59E007BD6EB /* View */,
 				EA51325623142FDC009F28C9 /* ViewModel */,
 				EA51325323142CF2009F28C9 /* Model */,
-				EAEDF65723044CAD00F50CBF /* AppDelegate.swift */,
 				EAEDF65B23044CAD00F50CBF /* Main.storyboard */,
 				EAEDF65E23044CC200F50CBF /* Assets.xcassets */,
 				EAEDF66023044CC200F50CBF /* LaunchScreen.storyboard */,
 				EAEDF66323044CC200F50CBF /* Info.plist */,
-				EACE2D0D231104EA00F9474B /* ContactsViewController.swift */,
-				EA04A98E231161E300521D7E /* GmsMapViewController.swift */,
-				EA51324F2313A7E5009F28C9 /* CareersViewController.swift */,
-				EA5132512313BAB4009F28C9 /* CareersTableViewCell.swift */,
 			);
 			path = ymlApp;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5970B82316623200A1AD84 /* NetworkManager.swift in Sources */,
 				EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */,
 				EA4DA04C2315373A007BD6EB /* ContactsViewModel.swift in Sources */,
 				EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */,
@@ -309,11 +319,13 @@
 				EA4DA04A231534EE007BD6EB /* ContactsModel.swift in Sources */,
 				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
 				EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */,
+				EA5970B42316426500A1AD84 /* Career.swift in Sources */,
 				EA4DA04623152233007BD6EB /* MainScreen.swift in Sources */,
 				EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */,
 				EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */,
 				EA5132502313A7E5009F28C9 /* CareersViewController.swift in Sources */,
 				EA336733230FC918005D4ACB /* NewsViewController.swift in Sources */,
+				EA5970B62316496200A1AD84 /* CareerVM.swift in Sources */,
 				EA51325523142D6A009F28C9 /* NewsModel.swift in Sources */,
 				EA5132582314304F009F28C9 /* NewsViewModel.swift in Sources */,
 				EA4DA03F2314F846007BD6EB /* WorkViewModel.swift in Sources */,

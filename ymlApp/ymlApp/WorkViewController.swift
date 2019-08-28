@@ -15,7 +15,7 @@ class WorkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        workType.workScreen = workType.workScreenObjects()
+        workType.workScreenObjects()
     }
 }
 
@@ -40,9 +40,12 @@ extension WorkViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let transitionToVc = self.storyboard?.instantiateViewController(withIdentifier: "WorkWebViewViewController") as! WorkWebViewViewController
-        transitionToVc.url = URL(string: workType.workScreen[indexPath.row].url)
-        self.navigationController?.pushViewController(transitionToVc, animated: true)
+        if let transitionToVc = self.storyboard?.instantiateViewController(withIdentifier: String(describing: WorkWebViewViewController.self)) as? WorkWebViewViewController {
+            transitionToVc.url = URL(string: workType.workScreen[indexPath.row].url)
+            self.navigationController?.pushViewController(transitionToVc, animated: true)
+            
+        }
+        
     }
 }
 

@@ -17,7 +17,7 @@ class NewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        newsType.news = newsType.getFeatured()
+       newsType.getFeatured()
     }
     
     @IBAction func indexChanged(_ sender: Any) {

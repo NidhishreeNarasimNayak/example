@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         collectionView.isPagingEnabled = true
         
-        mainType.mainScreen = mainType.homeScreenObjects()
+        mainType.homeScreenObjects()
         configurePageControl()
     }
 }
@@ -32,19 +32,20 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellReuse", for: indexPath) as? CollectionViewCell // to specify how each cell is designed
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as? CollectionViewCell { // to specify how each cell is designed
         let element = mainType.mainScreen[indexPath.row]
         
-        cell?.homeScreenImageView.image = UIImage(named: element.imagename)
+        cell.homeScreenImageView.image = UIImage(named: element.imagename)
         
-        cell?.homeScreenHeaderLabel.text = element.headerTitle
+        cell.homeScreenHeaderLabel.text = element.headerTitle
         //cell?.homeScreenHeaderLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
-        cell?.homeScreenDescriptionLabel.text = element.descriptionLabel
-        cell?.homeScreenDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0)
-        cell?.homeScreenLogoLabel.image = UIImage(named: element.logoLabel)
-        return cell ?? UICollectionViewCell()
+        cell.homeScreenDescriptionLabel.text = element.descriptionLabel
+        cell.homeScreenDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0)
+        cell.homeScreenLogoLabel.image = UIImage(named: element.logoLabel)
+            return cell
     }
-    
+        return UICollectionViewCell()
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
