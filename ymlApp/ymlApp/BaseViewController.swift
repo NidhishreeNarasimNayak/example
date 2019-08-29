@@ -13,6 +13,7 @@ struct  alertAction {
     var style: UIAlertAction.Style
     var handler: ((UIAlertAction) -> Void)?
 }
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {

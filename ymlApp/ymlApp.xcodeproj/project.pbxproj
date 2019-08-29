@@ -31,6 +31,8 @@
 		EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */; };
 		EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACE2D0D231104EA00F9474B /* ContactsViewController.swift */; };
 		EAD0F7A9231797590004061A /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0F7A8231797590004061A /* BaseVM.swift */; };
+		EAD0F7AB2317D1BA0004061A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0F7AA2317D1BA0004061A /* AboutUsViewController.swift */; };
+		EAD0F7AD2317D3F90004061A /* AboutUsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0F7AC2317D3F90004061A /* AboutUsCVCell.swift */; };
 		EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65723044CAD00F50CBF /* AppDelegate.swift */; };
 		EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDF65923044CAD00F50CBF /* ViewController.swift */; };
 		EAEDF65D23044CAD00F50CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEDF65B23044CAD00F50CBF /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		EA5BDA1D230BD5C00028D175 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EACE2D0D231104EA00F9474B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EAD0F7A8231797590004061A /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseVM.swift; path = ymlApp/BaseVM.swift; sourceTree = SOURCE_ROOT; };
+		EAD0F7AA2317D1BA0004061A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		EAD0F7AC2317D3F90004061A /* AboutUsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsCVCell.swift; sourceTree = "<group>"; };
 		EAEDF65423044CAD00F50CBF /* ymlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ymlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEDF65723044CAD00F50CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEDF65923044CAD00F50CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */,
 				EA336732230FC918005D4ACB /* NewsViewController.swift */,
 				EA5970BC2316B8FE00A1AD84 /* BaseViewController.swift */,
+				EAD0F7AA2317D1BA0004061A /* AboutUsViewController.swift */,
+				EAD0F7AC2317D3F90004061A /* AboutUsCVCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			files = (
 				EA5970B82316623200A1AD84 /* NetworkManager.swift in Sources */,
 				EAEDF65A23044CAD00F50CBF /* ViewController.swift in Sources */,
+				EAD0F7AD2317D3F90004061A /* AboutUsCVCell.swift in Sources */,
 				EA4DA04C2315373A007BD6EB /* ContactsViewModel.swift in Sources */,
 				EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */,
 				EA4DA03D2314F742007BD6EB /* Work.swift in Sources */,
@@ -328,6 +335,7 @@
 				EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */,
 				EA5132522313BAB4009F28C9 /* CareersTableViewCell.swift in Sources */,
 				EA5970B42316426500A1AD84 /* Career.swift in Sources */,
+				EAD0F7AB2317D1BA0004061A /* AboutUsViewController.swift in Sources */,
 				EA4DA04623152233007BD6EB /* MainScreen.swift in Sources */,
 				EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */,
 				EACE2D0E231104EA00F9474B /* ContactsViewController.swift in Sources */,
