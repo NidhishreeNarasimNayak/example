@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class MainScreenViewModel {
+class MainScreenViewModel: BaseVM {
     
     var mainScreen: [MainScreenModel] = []
     

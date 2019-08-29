@@ -12,9 +12,9 @@ protocol HTTPMethods{
     func get(urlString: String, headers: [String: String]?, successHandler: @escaping (Data) -> Void)
     func post(urlString: String, headers: [String: String]?, succesHandler: @escaping () -> Void)
 }
-class NetworkManager: HTTPMethods{
+class NetworkManager: BaseVM, HTTPMethods{
     static let shared = NetworkManager()
-    private init(){
+    private override init(){
     }
     func check(){
         print("In GET")

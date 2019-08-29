@@ -7,8 +7,7 @@
 //
 
 import Foundation
-class ContactsViewModel {
-    var contactScreen: [ContactsModel] = []
-        let siliconValley = ContactsModel(latitude: 37.52950, longitude: -122.258507)
-        let bangalore = ContactsModel(latitude: 12.9715, longitude: 77.5945)
+class ContactsViewModel: BaseVM {
+
+    let locations = (siliconValley: positions(latitude: 37.37, longitude: -122.04), bangalore: positions(latitude: 12.9715, longitude: 77.5945))
 }

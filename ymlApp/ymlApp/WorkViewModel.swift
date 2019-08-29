@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WorkViewModel {
+class WorkViewModel: BaseVM {
     
     var workScreen: [WorkModel] = []
     

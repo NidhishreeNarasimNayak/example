@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkViewController: UIViewController {
+class WorkViewController: BaseViewController {
     
     @IBOutlet weak var workTableView: UITableView!
     var workType = WorkViewModel()

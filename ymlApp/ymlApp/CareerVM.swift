@@ -9,7 +9,7 @@
 import Foundation
 import Foundation
 import HCVimeoVideoExtractor
-class CareerViewModel{
+class CareerViewModel: BaseVM {
     
     var jsonItems: [BoardMembers] = []
     
@@ -22,7 +22,7 @@ class CareerViewModel{
     typealias videoHandler = ((URL) -> Void)
     
     func loadPositionsFromJson(_ compHandler: @escaping jsonHandler){
-        let headers = ["Content-Type": "application/json", "JsonStub-User-Key" : userKey, "JsonStub-Project-Key": projectKey]
+        let headers = ["Content-Type": "application/json", "JsonStub-User-Key" : userKey, "JsonStub-Project-Key": projectKey] //storing
         NetworkManager.shared.get(urlString: jsonURL, headers: headers, successHandler: {
             [weak self] (data) in
             do {
@@ -63,6 +63,5 @@ class CareerViewModel{
                 completionHandler(videoURL)
             }
         })
-        
     }
 }

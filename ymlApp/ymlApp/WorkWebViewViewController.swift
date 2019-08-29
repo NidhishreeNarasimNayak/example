@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WorkWebViewViewController: UIViewController,WKNavigationDelegate {
+class WorkWebViewViewController: BaseViewController, WKNavigationDelegate {
     var webView: WKWebView!
     var url: URL!
     override func viewDidLoad() {

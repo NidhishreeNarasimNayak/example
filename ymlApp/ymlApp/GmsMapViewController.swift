@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class GmsMapViewController: UIViewController {
+class GmsMapViewController: BaseViewController {
     var latitude = 0.0
     var longitude = 0.0
     var marker: GMSMarker?

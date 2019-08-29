@@ -13,7 +13,7 @@ enum NewsView: Int {
     case design
     case ebooks
 }
-class NewsViewModel {
+class NewsViewModel: BaseVM {
    var news: [NewsModel] = []
     
     func getFeatured() {

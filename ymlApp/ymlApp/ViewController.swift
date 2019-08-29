@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var homeScreenPageControl: UIPageControl!
     
-    //var allElements: [homeScreenElements] = []
     var mainType = MainScreenViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
