@@ -15,6 +15,7 @@ class WorkViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("Work Tab Called")
         workType.workScreenObjects()
     }
 }

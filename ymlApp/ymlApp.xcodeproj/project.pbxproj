@@ -12,6 +12,8 @@
 		EA336733230FC918005D4ACB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA336732230FC918005D4ACB /* NewsViewController.swift */; };
 		EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */; };
 		EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */; };
+		EA48280C231812CB00D06971 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48280B231812CB00D06971 /* AboutUs.swift */; };
+		EA48280E231813F400D06971 /* AboutUsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48280D231813F400D06971 /* AboutUsVM.swift */; };
 		EA4D2279230D5C2700789257 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D2278230D5C2700789257 /* WorkViewController.swift */; };
 		EA4D227B230D5C7200789257 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */; };
 		EA4DA03D2314F742007BD6EB /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4DA03C2314F742007BD6EB /* Work.swift */; };
@@ -48,6 +50,8 @@
 		EA336732230FC918005D4ACB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EA336734230FCC7A005D4ACB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		EA47C22C230EDA2D00312DEB /* WorkWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWebViewViewController.swift; sourceTree = "<group>"; };
+		EA48280B231812CB00D06971 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		EA48280D231813F400D06971 /* AboutUsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutUsVM.swift; path = ymlApp/AboutUsVM.swift; sourceTree = SOURCE_ROOT; };
 		EA4D2278230D5C2700789257 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		EA4D227A230D5C7200789257 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		EA4DA03C2314F742007BD6EB /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				EA4DA04523152233007BD6EB /* MainScreen.swift */,
 				EA4DA049231534EE007BD6EB /* ContactsModel.swift */,
 				EA5970B32316426500A1AD84 /* Career.swift */,
+				EA48280B231812CB00D06971 /* AboutUs.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				EA5970B52316496200A1AD84 /* CareerVM.swift */,
 				EA5970B72316623200A1AD84 /* NetworkManager.swift */,
 				EAD0F7A8231797590004061A /* BaseVM.swift */,
+				EA48280D231813F400D06971 /* AboutUsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 				EAD0F7AD2317D3F90004061A /* AboutUsCVCell.swift in Sources */,
 				EA4DA04C2315373A007BD6EB /* ContactsViewModel.swift in Sources */,
 				EA47C22D230EDA2D00312DEB /* WorkWebViewViewController.swift in Sources */,
+				EA48280E231813F400D06971 /* AboutUsVM.swift in Sources */,
 				EA4DA03D2314F742007BD6EB /* Work.swift in Sources */,
 				EA5970BD2316B8FE00A1AD84 /* BaseViewController.swift in Sources */,
 				EA336735230FCC7A005D4ACB /* NewsTableViewCell.swift in Sources */,
@@ -347,6 +354,7 @@
 				EA4DA03F2314F846007BD6EB /* WorkViewModel.swift in Sources */,
 				EAEDF65823044CAD00F50CBF /* AppDelegate.swift in Sources */,
 				EA5BDA1E230BD5C00028D175 /* CollectionViewCell.swift in Sources */,
+				EA48280C231812CB00D06971 /* AboutUs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

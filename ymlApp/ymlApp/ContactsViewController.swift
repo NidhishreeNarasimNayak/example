@@ -23,8 +23,9 @@ class ContactsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("Contacts Tab Called")
         addTapGestures()
-    }
+}
     
     func addTapGestures() {
         let contactTap = UITapGestureRecognizer(target:self, action: Selector(("actionTapped:")))

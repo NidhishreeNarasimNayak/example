@@ -13,13 +13,12 @@ struct  alertAction {
     var style: UIAlertAction.Style
     var handler: ((UIAlertAction) -> Void)?
 }
-
+/// class which contains alertController and its actions 
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
+}
     func alertNotify(title: String, message: String, style: UIAlertController.Style, actions: [alertAction]){
             let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
             for item in actions{

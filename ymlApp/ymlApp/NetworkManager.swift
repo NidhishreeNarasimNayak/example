@@ -19,6 +19,7 @@ class NetworkManager: BaseVM, HTTPMethods{
     func check(){
         print("In GET")
     }
+    
     func get(urlString: String, headers: [String : String]? = nil, successHandler: @escaping (Data) -> Void) {
         guard let url = URL(string: urlString) else { return}
         var urlRequest = URLRequest(url: url)
@@ -34,7 +35,8 @@ class NetworkManager: BaseVM, HTTPMethods{
                 return
             }
             if let response = response as? HTTPURLResponse{
-                if response.statusCode >= 200 && response.statusCode < 300{
+                print("response\(response)")
+                if response.statusCode >= 200 && response.statusCode < 300 {
                     if let data = data {
                         successHandler(data)
                     }

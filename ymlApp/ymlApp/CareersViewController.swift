@@ -19,7 +19,7 @@ class CareersViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        debugPrint("Careers Tab called")
         viewModel.loadPositionsFromJson() { () -> Void in
             self.tableView.reloadData()
         }
